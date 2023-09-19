@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        let valorNulo = null ;
+        //o programador definiu explicitamente que valorNulo não possui um valor significativo
+        
+        console.log(valorNulo);//ira imprimir null
+        
+
+        let valorIndefinido ;
+        //a variavel valorIndefinido foi declarado,mas nenhum valor foi atribuido a ela.
+        console.log(valorIndefinido);//ira imprimir 'underfined'
+
+        let objeto ={};
+        //a propriedade "propriedade inexistente" nao foi definido no objeto.
+        console.log(objeto.propriedadeInexistente);//ira imprimir 'underfined'
+
+        
+        //alterando os valores das variaveis
+        valorNulo ='Novo Valor Atribuido';
+        valorIndefinido = 'Definição de um novo valor';
+
+        console.log(valorNulo);
+        console.log(valorIndefinido);
+
+    </script>
+</head>
+<body>
+<h1>Variavéis null e underfined</h1>    
+</body>
+</html>

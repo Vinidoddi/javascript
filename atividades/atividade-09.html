@@ -1,0 +1,47 @@
+<!-- crie um programa que leia o nome e a idade do usuario no final exibir
+na pagina o nome a idade e sua classificação.
+
+Classificção:
+
+menor do que 12 -- Criança
+Menor do que 18 -- Adolescente
+Maior ou igual a 18 --Adulto
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+
+        let Nome = prompt('Digite o Nome','');
+        let Idade = prompt('Digite a Idade','');
+
+        if(Idade < 12){
+            document.write('Nome' + Nome );
+            document.write('<br> Idade: '+ Idade);
+           document.write('classificação: Criança');     
+        }else if(Idade < 18){
+            document.write(' Nome:'+ Nome);
+            document.write('<br>'+'Idade: '+ Idade) ;
+            document.write('<br> Classificação: Adolescente') ;
+        }else{
+
+        }
+              
+              
+
+        
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
