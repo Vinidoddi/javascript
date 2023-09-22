@@ -1,0 +1,22 @@
+<script>              
+   
+    let ladoA =  (prompt('Digite o valor de lado A'));
+    let ladoB=( prompt ('Digite o valor do lado B')) ;
+    let baseC=(prompt("digite a medida da base C"));
+
+    if(ladoA===ladoB && ladoB===baseC && baseC===ladoA){
+
+document.write('triangulo equilatero');
+}
+
+else if(ladoA===ladoB || ladoB===baseC || ladoA===baseC){
+
+document.write('<font color=blue>triangulo isóceles</font>');
+}
+else{
+    document.write('triangulo escaleno');
+}
+                  
+
+
+</script>
