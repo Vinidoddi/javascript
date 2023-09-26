@@ -1,0 +1,30 @@
+
+
+<script>
+    //Crie um programa que leia o nome e 4 notas,no final exibir o nome do aluno as 4 notas, a media e se a media e maior que 7,0 aprovado
+    //caso contrario reprovado.
+    let Nome =prompt('Digite nome do Aluno','');
+    // Lê as 4 notas do aluno.
+    let notas = [];
+    for (let i = 0; i < 4; i++) {
+    notas.push(parseFloat(prompt("Digite a nota " + (i + 1) + ":")));
+    }
+    
+    // Calcula a média das notas.
+    let media = notas.reduce(function(a, b) {
+    return a + b;
+    }) / notas.length;
+    
+    // Exibe o nome do aluno, as 4 notas, a média e se a média é maior que 7,0 aprovado, caso contrário reprovado.
+    document.write("<table border solid=1 ");
+    document.write("<tr><th>Nome do aluno</th><td>" + Nome + "</td></tr>");
+    document.write("<tr><th>Notas</th><td>" + notas + "</td></tr>");
+    document.write("<tr><th>Média</th><td>" + media + "</td></tr>");
+    if (media >= 7.0) {
+    document.write("<tr><th>Resultado</th><td><font color=blue>Aprovado</font></td></tr>");
+    } else {
+    document.write("<tr><th>Resultado</th><td><font color=red>Reprovado</font></td></tr>");
+    }
+    document.write("</table>");
+    
+    </script>
