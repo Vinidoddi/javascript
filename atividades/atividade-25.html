@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback atividade</title>
+    <script>
+        function mostrarmensagem(){
+            document.write('<h1>Adoro Javascript</h1>');      
+        }
+        function mudarfundo(){
+            document.bgColor = 'brown';
+        }
+        function voltarfundo(){
+            document.bgColor = 'white';
+        }
+        function mostraralert(){
+            alert('Que aula show o Cristiano e demais !');}
+    </script>
+</head>
+<body>
+    <h1>Funções de Callback em Javascript</h1>
+
+    <button id="meubotao" onclick="mostrarmensagem()">Mensagen na Pagina!</button>
+
+    <button id="meubotao" onclick="mudarfundo()">Alterar o fundo para vermelho!</button>
+
+    <button id="meubotao" onclick="voltarfundo()">Alterar o fundo para Branco!</button>
+
+    <button id="meubotao" onclick="mostraralert()">Mensagem no alerta!</button>
+</body>
+</html>
