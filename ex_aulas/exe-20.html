@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+       
+function exibirSituacao(media, aprovado) {
+    if (aprovado) {
+        console.log("Aluno aprovado com média: " + media);
+        documnt.write("Aluno aprovado com média: " + media);
+    } else {
+        console.log("Aluno reprovado com média: " + media);
+        documnt.write("Aluno reprovado com média: " + media);
+    }
+}
+
+
+function verificarSituacao(media) {
+    if (media >= 7) {
+        return true; // Aprovado
+    } else {
+        return false; // Reprovado
+    }
+}
+
+
+function main() {
+    let media = parseFloat(prompt("Digite a nota do aluno: "));
+    let aprovado = verificarSituacao(media);
+    exibirSituacao(media, aprovado);
+}
+
+main();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

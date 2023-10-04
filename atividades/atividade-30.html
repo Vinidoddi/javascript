@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+
+ 
+
+        function lampadaOn() {
+
+            document.getElementById("lampada").src = "/atividades/imagens/ligada.png";
+
+        };
+        function lampadaOff() {
+
+            document.getElementById("lampada").src = "/atividades/imagens/desligada.png";
+
+        };
+
+    </script>
+
+ 
+    <div>
+
+        <img id="vinicius" src="/atividades/imagens/desligado.png" alt="" width="150">
+
+        <br>
+
+        <input  onclick="lampadaOn()"; Ligar type="radio" id="teste" name="teste"><br>
+
+        <input  onclick="lampadaOff()"; Desligartype="radio" id="teste" name="teste">
+
+ 
+
+    </div>
+
+       
+</body>
+</html>

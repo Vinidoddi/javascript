@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function somarValores(a, b) {
+            return a + b;
+        }
+        //aqui permitimos que os valores dos pârametros sejam definidos pelo usuario
+        a =parseInt(prompt('Valor 1:',''));
+        b =parseInt(prompt('Valor 2:',''));
+//a variavel resultado está recebendo a função somarValores
+        let resultado = somarValores(a, b);
+
+        console.log(resultado);
+        document.write('<h2><font color=red>' + resultado +'</font></h2>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
