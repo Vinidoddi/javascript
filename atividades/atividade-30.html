@@ -1,33 +1,49 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-    <script>
-
-        function lampadaOn() {
-
-            document.getElementById("lampada").src = "/atividades/imagens/ligada.png";
-
-        };
-        function lampadaOff() {
-
-            document.getElementById("lampada").src = "/atividades/imagens/desligada.png";
-
-        };
-
-    </script>
+    <title>Javascript</title> 
 </head>
 <body>
-    <div>
-        <img id="vinicius" src="/atividades/imagens/desligado.png" alt="" width="150">
+        <script>
+         function lampadaOn(){
+
+             document.getElementById("lampada").src ="/atividades/imagens/ligado.png";
+ 
+         };        
+
+        function lampadaOff(){
+
+            document.getElementById("lampada").src ="/atividades/imagens/desligado.png";
+
+         }; 
+
+    </script> 
+    <div>      
+        <img id="lampada"src="/atividades/imagens/desligado.png"alt=""width="150">     
+
         <br>
-    <input onclick="lampadaOn()";Ligar></input><br> 
-    <button onclick="lampadaOff()"Desligar></button>
+
+    <button onclick="lampadaOn()"  >Ligar</button><br>
+
+    <button onclick="lampadaOff()" >desligada</button>
+
+ 
+
+ 
 
     </div>
 
+ 
+
+   
+
+ 
+
     </body>
+
+ 
+
     </html>
