@@ -8,19 +8,24 @@
 <body>
     <style>
         body{
-            background: linear-gradient(to right,#4679bd 5%,#2e3b5a);
-           
-            
-                   
+            background: linear-gradient(to right,#79b3ff00 5%,#2e3b5a);       
         }
-        #container{          
+        h3{
+            text-align: center;
+            color:#5d595947;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 30px;
+            
+        }
+        
+                #container{          
                                                          
             background:#e1dede00;            
             border-radius: .5em ;                                   
             box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.515);                        
-            padding: 2%;            
+            padding: 30px;            
             width: 30%;            
-            margin: auto;                                    
+            margin: 300px;                                    
             display: flex;                        
             align-items: center;                        
             justify-content: center;                        
@@ -32,7 +37,7 @@
                                                          
         }
         .horas, .minutos, .segundos{                                                
-            color: rgba(154, 24, 24, 0.418);            
+            color: rgba(195, 91, 224, 0.572);            
             padding:20px ;                                                          
             margin: 1px;               
             font-family:fantasy;                          
@@ -41,8 +46,10 @@
 
 
          }
+
        
     </style>
+    <h3>Desenvolvido por Marcus Doddi</h3>
 
 <div id="container">
     <span id="horas" class="horas">00</span>
@@ -50,7 +57,9 @@
     <span id="minutos"class="minutos"></span>
     <span>:</span>
     <span id="segundos"class="segundos" >00</span>
+    
 </div>   
+
     <script>
         const horas = document.getElementById('horas');    
         const minutos = document.getElementById('minutos');    
@@ -76,6 +85,7 @@
         })
     
     </script>
+    
     
 </body>
 </html>
